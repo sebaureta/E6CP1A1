@@ -1,10 +1,12 @@
 # El siguiente ejercicio busca calcular el factorial de 10.
 # TIP: El resultado es 3628800.
 
-multiplicacion = 1
-
-10.times do |i|
-  multiplicacion *= i
+def factorial(num)
+  if num.zero?
+    1
+  else
+    num * factorial(num - 1)
+  end
 end
 
-puts multiplicacion
+puts factorial(10)
