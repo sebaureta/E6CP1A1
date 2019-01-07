@@ -1,6 +1,5 @@
 =begin
 Generar el código para imprimir la siguiente tabla:
-
  <table>
  <tbody>
   <tr>
@@ -24,3 +23,13 @@ Generar el código para imprimir la siguiente tabla:
   <tbody>
  </table>
 =end
+
+a = 4
+num = ''
+b = "<table>\n<tbody>\n<tr>\n"
+n = num.to_i + 1
+4.times do |num|
+  b += "<td> #{num += 1} </td>\n<td> #{n} </td>\n<td> #{n} </td>\n"
+end
+b += "</tr>\n</tbody>\n</table>\n"
+puts b
